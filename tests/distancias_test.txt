@@ -1,0 +1,8 @@
+CABA, Rosario, 299.9
+CABA, Santa Fe, 468.5
+CABA, Serodino, 349.8
+CABA, Villa Constitucion, 257
+CABA, Villa Gobernador Galvez, 293.1
+CABA, Villa Maria, 552.7
+Cordoba, Rio Cuarto, 212.8
+Cordoba, Rosario, 400.9
