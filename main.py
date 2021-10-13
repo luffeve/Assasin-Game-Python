@@ -102,8 +102,8 @@ def asignar_rival(jugador, jugadores_lista, distancias_join, distancia_maxima):
 
     ciudad_jugador=jugador.split(',')[2] #Para saber la ciudad del jugador
     #posibles_rivales contendra aquellos jugadores que sean de la misma ciudad que jugador
-    posibles_rivales=list(filter(lambda ciudad:ciudad.split(',')[2]==ciudad_jugador, jugadores_lista))
-    #posibles_rivales=[ciudad for ciudad in jugadores_lista if ciudad.split(',')[2]==ciudad_jugador] #Alrededor de 30% más rápida
+    #posibles_rivales=list(filter(lambda ciudad:ciudad.split(',')[2]==ciudad_jugador, jugadores_lista))
+    posibles_rivales=[ciudad for ciudad in jugadores_lista if ciudad.split(',')[2]==ciudad_jugador] #Alrededor de 30% más rápida
     #que la que esta comentada arriba. Seguramente se pueda implementar algo más rápido pero no estoy muy seguro como. 
 
     if jugador in posibles_rivales:     #Para que no haga una asignacion con el propio jugador
