@@ -1,8 +1,7 @@
 #Participantes: Gaston Moriconi - Lorenzo Re
 
-import os              # Para manejar archivos en distintos sistemas operativos.
-from random import *   # Para usar funciones de la libreria random.
-
+import os                   # Para manejar archivos en distintos sistemas operativos.
+from random import choice   # Para usar la funcion choice de la libreria random 
 
 
 #categoria: String Char -> [String]
@@ -135,9 +134,9 @@ def asignar_rival(jugador, jugadores_lista, distancias_join, distancia_maxima):
             for i in range (0, len(posibles_rivales)):
 	            for j in range (0, len(posibles_rivales)):
 		            if distancia_entre_jugadores(jugador, posibles_rivales[j], distancias_join) >= distancia_entre_jugadores(jugador, posibles_rivales[i], distancias_join):
-			            aux=posibles_rivales[i]
+			            auxiliar=posibles_rivales[i]
 			            posibles_rivales[i]=posibles_rivales[j]
-			            posibles_rivales[j]=aux
+			            posibles_rivales[j]=auxiliar
 
             #Luego recorre la lista para asegurarse de no asignarle un rival
             #donde haya mas jugadores en la ciudad del mismo.
